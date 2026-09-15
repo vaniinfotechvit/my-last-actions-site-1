@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First GitHub Actions Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My First Website</h1>
+    <p>Learning GitHub Actions and GitHub Pages 🚀</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Hello, GitHub!</h2>
+      <p>
+        This is my first website deployed using GitHub Pages.
+        I am also learning how GitHub Actions works.
+      </p>
+      <button onclick="showMessage()">Click Me</button>
+      <p id="message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with HTML and CSS</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "Your website is working successfully! 🎉";
+    }
+  </script>
+
+</body>
+</html>
