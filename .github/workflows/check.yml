@@ -1,0 +1,26 @@
+name: Check Website
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get repository files
+        uses: actions/checkout@v4
+
+      - name: Check index.html exists
+        run: test -f index.html
+
+      - name: Check style.css exists
+        run: test -f style.css
+
+      - name: Show success message
+        run: echo "Website files are ready!"
